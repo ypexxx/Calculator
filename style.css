@@ -22,8 +22,40 @@ body {
     box-shadow: 0 5px 10px #626262;
 }
 
+.display {
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    /* border: none; */
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #111;
+    background-color: #eee;
+    pointer-events: none;
+}
+
 .buttons {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.buttons button:active {
+    transform: scale(0.9);
+}
+
+.buttons .operator {
+    color: #6e73ff;
 }
